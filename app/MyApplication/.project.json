@@ -1,0 +1,83 @@
+{
+	"Credential": "cf",
+	"Template": {
+		"Id": "@ext-mdkvsc-npm-dev/generator-mdk",
+		"Name": "CRUD",
+		"Version": "0.0.1"
+	},
+	"CF": {
+		"Target": "",
+		"Organization": "",
+		"Space": "",
+		"Deploy": {
+			"Description": "My SAP application",
+			"WebClient": {
+				"Runtime": "preview",
+				"URL": ""
+			},
+			"Destination": [
+				{
+					"CF": "Test-app-srv",
+					"MDK": "../service/Test/",
+					"URL": ""
+				}
+			]
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "",
+		"AppId": "lcap.Test.MyApplication",
+		"Destination": []
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": ""
+	},
+	"LCAP": {
+		"FullName": "Test_MyApplication",
+		"Service": [
+			{
+				"mdk": "MyApplication/Services/service1.service",
+				"cap": {
+					"name": "TestService",
+					"sourcePath": "srv/service.cds",
+					"path": "/service/Test/",
+					"entryPath": "/service/Test",
+					"destination": "Test-app-srv",
+					"value": "0"
+				},
+				"links": [
+					{
+						"entity": "TestService.Authors",
+						"files": [
+							"MyApplication/Pages/Authors/Authors_Detail.page",
+							"MyApplication/Pages/Authors/Authors_Edit.page",
+							"MyApplication/Pages/Authors/Authors_List.page",
+							"MyApplication/Actions/Authors/Authors_CreateEntity.action",
+							"MyApplication/Actions/Authors/Authors_DeleteEntity.action",
+							"MyApplication/Actions/Authors/Authors_UpdateEntity.action"
+						]
+					},
+					{
+						"entity": "TestService.Books",
+						"files": [
+							"MyApplication/Pages/Books/Books_Detail.page",
+							"MyApplication/Pages/Books/Books_Edit.page",
+							"MyApplication/Pages/Books/Books_List.page",
+							"MyApplication/Actions/Authors/Authors_CreateBooks.action",
+							"MyApplication/Actions/Books/Books_CreateEntity.action",
+							"MyApplication/Actions/Books/Books_DeleteEntity.action",
+							"MyApplication/Actions/Books/Books_UpdateEntity.action"
+						]
+					}
+				]
+			}
+		],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	}
+}

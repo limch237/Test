@@ -1,0 +1,22 @@
+{
+    "ParentLink": {
+        "Property": "books",
+        "Target": {
+            "EntitySet": "Authors",
+            "ReadLink": "{@odata.readLink}"
+        }
+    },
+    "OnFailure": "/MyApplication/Actions/CreateEntityFailureMessage.action",
+    "OnSuccess": "/MyApplication/Actions/CreateEntitySuccessMessage.action",
+    "Properties": {
+        "Name": "#Control:Name/#Value"
+    },
+    "Target": {
+        "EntitySet": "Books",
+        "Service": "/MyApplication/Services/service1.service"
+    },
+    "ActionResult": {
+        "_Name": "create"
+    },
+    "_Type": "Action.Type.ODataService.CreateRelatedEntity"
+}

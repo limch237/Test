@@ -1,0 +1,12 @@
+{
+    "PopoverItems": [{
+            "Title": "Add Books",
+            "OnPress": "/MyApplication/Rules/Authors/NavToAuthors_CreateBooks.js"
+        },
+        {
+            "Title": "Delete",
+            "OnPress": "/MyApplication/Rules/Authors/Authors_DeleteConfirmation.js"
+        }
+    ],
+    "_Type": "Action.Type.PopoverMenu"
+}

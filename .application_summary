@@ -1,0 +1,5 @@
+{
+  "ProjectOverviewURL": "https://9c48a514trial.launchpad.cfapps.us10.hana.ondemand.com/lcapTest.TestLaunchpad-1.0.0",
+  "DeployedUTCTime": "2023-05-10T04:02:42.187Z",
+  "ApplicationLogURL": "https://logs.cf.us10-001.hana.ondemand.com/app/dashboards#/view/Overview?_g=(filters:!((query:(match_phrase:(component_name:Test-srv)))))"
+}

@@ -1,0 +1,6 @@
+{
+    "ModalPageFullscreen": false,
+    "ModalPage": true,
+    "PageToOpen": "/MyApplication/Pages/Books/Books_Edit.page",
+    "_Type": "Action.Type.Navigation"
+}
